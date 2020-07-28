@@ -23,12 +23,9 @@ func main() {
 	if err != nil {
 		log.Println(err)
 	}
-	fmt.Println("Blog Titles:")
 	fmt.Printf(blogTitles)
 }
 
-// GetLatestBlogTitles gets the latest blog title headings from the url
-// given and returns them as a list.
 func GetLatestBlogTitles(url string, input string) (string,error) {
 	// Get the HTML
 	resp, err := http.Get(url)
